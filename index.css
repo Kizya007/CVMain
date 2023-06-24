@@ -10,13 +10,26 @@ body {
   background-color: #000;
 }
 
+span {
+  display: block;
+}
+
 .cv {
   display: flex;
 
   padding: 0px 0px 40px 40px;
 }
 
-.about {
+.container {
+  display: flex;
+
+  max-width: 1440px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.about-me {
   display: flex;
   flex-direction: column;
 
@@ -25,7 +38,7 @@ body {
   margin-right: 31px;
 }
 
-.about-img {
+.about-me__img {
   width: 322px;
 }
 .logo {
@@ -35,7 +48,7 @@ body {
 
   margin-right: 41px;
 }
-.text {
+.personal-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +67,7 @@ body {
 
 .rectangle {
   position: absolute;
-  
+
   transform: translateX(-50%);
   top: -19px;
   left: 50%;
@@ -117,7 +130,7 @@ body {
 
   margin-bottom: 20px;
 }
-.contact-item__img {
+.contact-item__icon {
   margin-right: 16px;
 }
 
@@ -136,7 +149,10 @@ body {
   color: #ffffff;
 }
 
-.info {
+.expirience {
+  display: flex;
+  flex-direction: column;
+
   position: relative;
 
   border: 1px solid #ffffff;
@@ -152,6 +168,7 @@ body {
 
   margin-top: 32px;
 }
+
 .arrow {
   position: absolute;
 
@@ -159,13 +176,12 @@ body {
   left: 40px;
 }
 
-.expirience {
+.education {
   display: flex;
-
-  padding: 0px;
+  align-items: baseline;
 }
 
-.expirience-title {
+.education-title {
   font-family: "Redcollar";
   font-style: normal;
   font-weight: 400;
@@ -178,10 +194,8 @@ body {
   width: 100%;
   max-width: 124px;
 }
-.expirience-info {
-}
 
-.expirience-list {
+.education-list {
   list-style-type: none;
 
   margin: 0;
@@ -190,18 +204,64 @@ body {
   margin-bottom: 8px;
 }
 
-.expirience-list__item:not(:nth-child(1)) {
+.education-list__item {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 
-  color: #ffffff;
-
-  opacity: 0.4;
+  color: #666666;
 
   letter-spacing: -0.01em;
 }
+
+.career {
+  display: flex;
+  align-items: baseline;
+}
+
+.career-title {
+  font-family: "Redcollar";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  margin-right: 72px;
+  margin-left: 28px;
+
+  width: 100%;
+  max-width: 124px;
+}
+
+.career-list {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 8px;
+}
+
+.career-list__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #666666;
+
+  letter-spacing: -0.01em;
+}
+
+.list-title {
+  color: #ffffff;
+
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 0;
+}
+
 .line {
   margin-top: 12px;
   margin-bottom: 20px;
