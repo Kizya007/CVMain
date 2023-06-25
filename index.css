@@ -293,6 +293,19 @@ span {
   margin-left: 32px;
 }
 
+@media screen and (max-width: 1420px) {
+  .expirience {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+}
+
+@media screen and(max-width: 768px) {
+
+}
+
 @media screen and (max-width: 360px) {
   .cv {
     display: flex;
